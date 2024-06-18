@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <title>Aplicación web de reconocimiento facial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <center>
+    <h3 class="btn btn-default heading">Reconocimiento facial</h3>
+    <br><br>
+
+    <p style="font-size: 22px;">Aqui podemos identificar a: </p>
+
+    <b class="name_of_person">
+        Astrid
+        <hr>
+        Latte
+        <hr>
+        Hati
+        <hr>
+    </b>
+
+    <label>Vista de la cámara: </label>
+    <div id="camara"></div>
+    <br><br>
+   <div id="result"></div>
+    <br><br>
+    <button onclick="take_snapshot();" class="btn btn-info">Capturar imagen</button>
+    <br><br>
+    <button onclick="check();" class="btn btn-success">Identificar imagen</button>
+    <br><br>
+
+    <p style="font-size: 22px;">Persona: <span id="result_person_name"></span></p>
+    <p style="font-size: 22px;">Precisión: <span id="result_object_accuracy"></span></p>
+  </center>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
